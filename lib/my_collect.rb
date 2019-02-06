@@ -5,7 +5,7 @@ def my_collect(array)
     yield array[i]
     i+=1 
     end
-    array
+    array.map(&:upcase)  # Don't do this
   else 
     return "Hey! No block was given!"
   end 
